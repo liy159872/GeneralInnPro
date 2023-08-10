@@ -1,0 +1,22 @@
+<view class="container">
+  <view class="login-box">
+ <!-- Insert your image here -->
+ <view class="im">
+ <image src="https://cdn.jsdelivr.net/gh/LJHX5470/LYiImageBed@main//LJHX/logoq.png" mode="widthFix" style="width: 100%; "></image>
+</view>
+<!-- Title -->
+<view class="title">
+      <text class="title-text">将军小栈 【李一】 研发项目</text>
+    </view>
+
+    <button wx:if="{{canIUseGetUserProfile}}" type="primary" class="wx-login-btn" bindtap="wxLogin">微信直接登录</button>  
+    <button wx:else type="primary" open-type="getUserProfile" class="wx-login-btn" open-type="getUserInfo" bindgetuserinfo="wxLogin">微信直接登录</button>
+    <button type="primary" class="account-login-btn" bindtap="accountLogin">账号登录</button>
+
+<!-- Introduction -->
+<view class="title1">
+<text class="info-text0">李一 GeneralInnPro 创始人\n</text>
+    <text class="info-text">\n很高兴你能和将军一起使用GeneralInnPro共享和协作,\nGeneralInnPro也是难得和你相遇。\n期待未来GeneralInnPro继续发展，成为更好、更强的技术发展基石。！</text>
+</view>
+  </view>
+</view>

@@ -1,0 +1,26 @@
+<!-- pages/your-page/your-page.wxml -->
+<view class="about">
+  <view class="title">关于我们</view>
+  <view class="author-info">
+    <view class="author-avatar" bindtap="showImage" data-src="https://cdn.jsdelivr.net/gh/LJHX5470/LYiImageBed@main//LJHX/055.png">
+      <image src="https://cdn.jsdelivr.net/gh/LJHX5470/LYiImageBed@main//LJHX/055.png" mode="aspectFill"></image>
+    </view>
+    <view class="author-desc">
+      <view class="author-name">开发作者</view>
+      <view class="author-intro">一个热爱编程的年轻人。他的主要技术栈是Vue和SpringBoot+Spring Cloud，喜欢研究新技术。</view>
+    </view>
+  </view>
+  <view class="gf-info">
+    <view class="gf-avatar" bindtap="showImage" data-src="https://cdn.jsdelivr.net/gh/LJHX5470/LYiImageBed@main//LJHX/056.jpg">
+      <image src="https://cdn.jsdelivr.net/gh/LJHX5470/LYiImageBed@main//LJHX/056.jpg" mode="aspectFill"></image>
+    </view>
+    <view class="gf-desc">
+      <view class="gf-name">女友支持</view>
+      <view class="gf-intro">作者的女友是一个温柔善良的机长，一直支持着他的事业。在作者需要帮助的时候，她总是第一个出现。</view>
+    </view>
+  </view>
+  <view class="title">我们的生活</view>
+  <view class="video-wrapper">
+    <video src="{{videoSrc}}" poster="{{poster}}" controls></video>
+  </view>
+</view>

@@ -1,0 +1,110 @@
+.login-box {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  padding: 0 40rpx;
+  margin-top: -150rpx;
+}
+
+.wx-login-btn {
+  margin: 60rpx 0 40rpx 0;
+  height: 96rpx;
+  line-height: 96rpx;
+  font-size: 30rpx;
+  border-radius: 6rpx;
+  width: 90%;
+  color: #fff;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: flex;
+  bottom: 0;
+  left: 0;
+  padding: 0;
+  margin-left: 5%;
+  text-align: center;
+  /* padding-left: -5rpx; */
+  border-top-left-radius: 50rpx;
+  border-bottom-left-radius: 50rpx;
+  border-top-right-radius: 50rpx;
+  border-bottom-right-radius: 50rpx;
+  letter-spacing: 3rpx;
+  background-image: linear-gradient(to right, #9a9ba1 0%, #11df3e 100%);
+}
+
+.account-login-btn {
+  width: 90%;
+  margin: 0 auto;
+  color: #fff;
+  font-size: 30rpx;
+  height: 96rpx;
+  line-height: 96rpx;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: flex;
+  bottom: 0;
+  left: 0;
+  border-radius: 0;
+  padding: 0;
+  margin-left: 5%;
+  text-align: center;
+  /* padding-left: -5rpx; */
+  border-top-left-radius: 50rpx;
+  border-bottom-left-radius: 50rpx;
+  border-top-right-radius: 50rpx;
+  border-bottom-right-radius: 50rpx;
+  letter-spacing: 3rpx;
+  background-image: linear-gradient(to right, #9a9ba1 0%, #118cdf 100%);
+}
+
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://cdn.jsdelivr.net/gh/LJHX5470/LYiImageBed@main//LJHX/dlbj.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.im {
+  margin-top: 0rpx;
+  margin-bottom: 0px;
+}
+
+/* Title styles */
+.title {
+  margin-top: 70rpx;
+  margin-bottom: 20px;
+}
+
+.title-text {
+  font-size: 14px;
+  font-weight: bold;
+  color: #302f2f;
+}
+
+.title1 {
+  margin-top: 240rpx;
+}
+.info-text0 {
+  font-size: 10px;
+  color: #0f0f0f;
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: bold; /* 添加字体加粗样式 */
+}
+/* Introduction text styles */
+.info-text {
+  font-size: 10px;
+  color: #3f3e3e;
+  text-align: center;
+  margin-bottom: 10px;
+}
