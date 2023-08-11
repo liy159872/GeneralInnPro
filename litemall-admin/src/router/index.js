@@ -553,27 +553,27 @@ export const asyncRoutes = [
     },
     children: [
       {
-        path: 'https://cloud.tencent.com/product/cos',
+        path: 'https://www.lwglovezxm.cn/',
         meta: { title: 'app.menu.external_link_tencent_cos', icon: 'link' }
       },
       {
-        path: 'https://cloud.tencent.com/product/sms',
+        path: 'https://www.lwglovezxm.cn/about/',
         meta: { title: 'app.menu.external_link_tencent_sms', icon: 'link' }
       },
       {
-        path: 'https://pay.weixin.qq.com/index.php/core/home/login',
+        path: 'https://blog.csdn.net/LetterLJHX?type=blog',
         meta: { title: 'app.menu.external_link_weixin_pay', icon: 'link' }
       },
       {
-        path: 'https://mpkf.weixin.qq.com/',
+        path: 'https://general.lwglovezxm.cn/',
         meta: { title: 'app.menu.external_link_weixin_mpkf', icon: 'link' }
       },
       {
-        path: 'https://www.alibabacloud.com/zh/product/oss',
+        path: 'https://gitee.com/liyiaixuemei',
         meta: { title: 'app.menu.external_link_alibaba_oss', icon: 'link' }
       },
       {
-        path: 'https://www.qiniu.com/products/kodo',
+        path: '',
         meta: { title: 'app.menu.external_link_qiniu_kodo', icon: 'link' }
       },
       {

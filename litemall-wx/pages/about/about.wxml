@@ -7,6 +7,16 @@
     </view>
   </view>
 
+  <view class="label">开发团队:</view>
+  <view class="about-item">
+    <view class="item-left">
+      <text>李一</text>
+    </view>
+    <view class="item-right" bindtap="showLocation">
+      <van-icon class="right-icon" name="friends-o" />
+    </view>
+  </view>
+
   <view class="label">项目地址:</view>
   <view class="about-item">
     <view class="item-left">
