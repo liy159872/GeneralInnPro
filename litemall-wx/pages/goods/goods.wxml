@@ -92,6 +92,16 @@
     </view>
   </view>
 
+  <view class="goods-attr">
+    <view class="t">认证</view>
+    <view class="l">
+      <view class="item">
+        <text class="left">GeneralInnPro</text>
+        <text class="right">质检合格品</text>
+      </view>
+    </view>
+  </view>
+
   <view class="detail">
     <import src="/lib/wxParse/wxParse.wxml" />
     <template is="wxParse" data="{{wxParseData:goodsDetail.nodes}}" />

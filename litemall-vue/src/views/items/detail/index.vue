@@ -28,6 +28,7 @@
       />
       <van-cell title="属性" isLink @click.native="propsPopup = true"/>
       <van-cell title="运费" value="满88免邮费"/>
+      <van-cell title="认证" value="GeneralInnPro质检合格品"/>
     </van-cell-group>
     <van-sku
       v-model="showSku"

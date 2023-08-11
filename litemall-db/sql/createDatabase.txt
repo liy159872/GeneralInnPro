@@ -1,0 +1,35 @@
+//创建数据库
+//执行创建表
+source D:/FDisk/000-Storage/afterWork/0-theGeneralsInn_schema.sql;
+
+source D:/FDisk/000-Storage/afterWork/1-theGeneralsInn_table.sql;
+
+
+source D:/FDisk/000-Storage/Test.sql;
+
+source D:/FDisk/000-Storage/afterWork/2-theGeneralsInn_data.sql;
+
+//执行创建测试数据
+
+
+
+//删除数据
+DROP DATABASE theGeneralsInn;
+
+
+//错误提示
+若出现错误
+ERROR 1406 (22001): Data too long for column 'nickname' at row 1
+则：
+先将数据库删除
+再
+解决方法是使用命令 SET NAMES utf8, 执行该条命令之后再重新创建数据库，重新创建表，插入数据即可
+
+
+
+图床密钥
+37a1f49383d22cfe626d6d462d0a781d
+
+
+
+
