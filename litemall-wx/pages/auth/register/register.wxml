@@ -1,6 +1,16 @@
 <view class="container">
   <view class="form-box">
 
+   <!-- Insert your image here -->
+ <view class="im">
+ <image src="https://cdn.jsdelivr.net/gh/LJHX5470/LYiImageBed@main//LJHX/logoq.png" mode="widthFix" style="width: 100%; "></image>
+</view>
+
+    <view class="form-item">
+      <input class="username" value="{{nickname}}" bindinput="bindNicknameInput" placeholder="昵称" auto-focus/>
+      <van-icon  wx:if="{{ nickname.length > 0 }}" id="clear-nickname" class="clear" name="close" catchtap="clearInput"/>      
+    </view>
+
     <view class="form-item">
       <input class="username" value="{{username}}" bindinput="bindUsernameInput" placeholder="用户名" auto-focus/>
       <van-icon  wx:if="{{ username.length > 0 }}" id="clear-username" class="clear" name="close" catchtap="clearInput"/>      

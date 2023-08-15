@@ -150,6 +150,12 @@ Page({
       }
     });
   },
+  bindNicknameInput: function(e) {
+
+    this.setData({
+      nickname: e.detail.value
+    });
+  },
   bindUsernameInput: function(e) {
 
     this.setData({
@@ -182,6 +188,11 @@ Page({
   },
   clearInput: function(e) {
     switch (e.currentTarget.id) {
+      case 'clear-nickname':
+        this.setData({
+          nickname: ''
+        });
+        break;
       case 'clear-username':
         this.setData({
           username: ''

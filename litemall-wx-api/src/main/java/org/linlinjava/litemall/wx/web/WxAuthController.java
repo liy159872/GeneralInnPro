@@ -243,6 +243,7 @@ public class WxAuthController {
      */
     @PostMapping("register")
     public Object register(@RequestBody String body, HttpServletRequest request) {
+        String nickname = JacksonUtil.parseString(body, "nickname");
         String username = JacksonUtil.parseString(body, "username");
         String password = JacksonUtil.parseString(body, "password");
         String mobile = JacksonUtil.parseString(body, "mobile");
@@ -250,7 +251,7 @@ public class WxAuthController {
         // 如果是小程序注册，则必须非空
         // 其他情况，可以为空
         String wxCode = JacksonUtil.parseString(body, "wxCode");
-        log.info("The value of LWG 微信code: {}", wxCode);
+        //log.info("The value of LWG 微信code: {}", wxCode);
 
         if (StringUtils.isEmpty(username) || StringUtils.isEmpty(password) || StringUtils.isEmpty(mobile)
                 || StringUtils.isEmpty(code)) {
@@ -281,7 +282,7 @@ public class WxAuthController {
         if(!StringUtils.isEmpty(wxCode)) {
             try {
                 WxMaJscode2SessionResult result = this.wxService.getUserService().getSessionInfo(wxCode);
-                log.info("The value of LWG 微信result: {}", result);
+                //log.info("The value of LWG 微信result: {}", result);
                 openId = result.getOpenid();
             } catch (Exception e) {
                 e.printStackTrace();
@@ -312,7 +313,7 @@ public class WxAuthController {
         user.setAvatar("https://cdn.jsdelivr.net/gh/LJHX5470/LYiImageBed@main//LJHX/Ins1.jpg");
         //user.setNickname(username);
         //LWG23.8.3
-        user.setNickname(user.getNickname());
+        user.setNickname(nickname);
         user.setGender((byte) 0);
         user.setUserLevel((byte) 0);
         user.setStatus((byte) 0);
