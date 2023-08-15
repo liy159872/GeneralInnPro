@@ -3,6 +3,7 @@ package org.linlinjava.litemall.wx.web;
 import cn.binarywang.wx.miniapp.api.WxMaService;
 import cn.binarywang.wx.miniapp.bean.WxMaJscode2SessionResult;
 import cn.binarywang.wx.miniapp.bean.WxMaPhoneNumberInfo;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.linlinjava.litemall.core.notify.NotifyService;
@@ -41,6 +42,7 @@ import static org.linlinjava.litemall.wx.util.WxResponseCode.*;
 @RestController
 @RequestMapping("/wx/auth")
 @Validated
+@Slf4j
 public class WxAuthController {
     private final Log logger = LogFactory.getLog(WxAuthController.class);
 
@@ -248,6 +250,7 @@ public class WxAuthController {
         // 如果是小程序注册，则必须非空
         // 其他情况，可以为空
         String wxCode = JacksonUtil.parseString(body, "wxCode");
+        log.info("The value of LWG 微信code: {}", wxCode);
 
         if (StringUtils.isEmpty(username) || StringUtils.isEmpty(password) || StringUtils.isEmpty(mobile)
                 || StringUtils.isEmpty(code)) {
@@ -278,6 +281,7 @@ public class WxAuthController {
         if(!StringUtils.isEmpty(wxCode)) {
             try {
                 WxMaJscode2SessionResult result = this.wxService.getUserService().getSessionInfo(wxCode);
+                log.info("The value of LWG 微信result: {}", result);
                 openId = result.getOpenid();
             } catch (Exception e) {
                 e.printStackTrace();
