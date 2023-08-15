@@ -244,6 +244,7 @@ public class WxAuthController {
     @PostMapping("register")
     public Object register(@RequestBody String body, HttpServletRequest request) {
         String nickname = JacksonUtil.parseString(body, "nickname");
+        log.info("The value of LWG 昵称: {}", nickname);
         String username = JacksonUtil.parseString(body, "username");
         String password = JacksonUtil.parseString(body, "password");
         String mobile = JacksonUtil.parseString(body, "mobile");
