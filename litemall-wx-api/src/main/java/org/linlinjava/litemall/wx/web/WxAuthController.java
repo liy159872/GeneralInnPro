@@ -225,7 +225,7 @@ public class WxAuthController {
      *                mobile: xxx
      *                code: xxx
      *                }
-     *                其中code是手机验证码，目前还不支持手机短信验证码
+     *                其中 code 是手机验证码，目前还不支持手机短信验证码
      * @param request 请求对象
      * @return 登录结果
      * 成功则
