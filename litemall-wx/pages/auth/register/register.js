@@ -4,6 +4,7 @@ var check = require('../../../utils/check.js');
 var app = getApp();
 Page({
   data: {
+    nickname: '',
     username: '',
     password: '',
     confirmPassword: '',
@@ -73,6 +74,7 @@ Page({
     wx.request({
       url: api.AuthRegister,
       data: {
+        nickname: that.data.nickname,
         username: that.data.username,
         password: that.data.password,
         mobile: that.data.mobile,
