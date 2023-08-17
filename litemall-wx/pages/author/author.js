@@ -4,7 +4,7 @@ const app = getApp()
 Page({
   data: {
     videoSrc: 'http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4',
-    poster: 'https://i.328888.xyz/2023/04/13/igOnyy.jpeg',
+    poster: 'https://cdn.jsdelivr.net/gh/LJHX5470/LYiImageBed@main//LJHX/1.jpg',
     controls: true,
     autoplay: false,
     loop: false,
