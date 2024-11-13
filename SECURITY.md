@@ -12,4 +12,5 @@ currently being supported with security updates.
 
 ## Reporting a Vulnerability
 
-Please report security issues to linlinjavaer@gmail.com
+Please report security issues to 2080863176@qq.com
+

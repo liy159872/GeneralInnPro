@@ -1,29 +1,37 @@
-# litemall
+<h1 align="center">GeneralInnPro（Java）</h1>
+<h4 align="center">🚀GeneralInnPro-AdminPC、📱GeneralInnPro-AdminH5、✅分开管理联合平台</h4> 
+<p align="center">
+<a href="https://www.java.com/zh-CN/download/"><img src="https://img.shields.io/badge/JAVA-8-d74f11"> </a><a href="#"> <img src="https://img.shields.io/badge/Spring Boot-2-5ea931"> </a><a href="https://www.tslang.cn/"><img src="https://img.shields.io/badge/TypeScript-3-294e80"></a> <a href="#"><img src="https://img.shields.io/badge/Vue.js-3-4eb883"> </a><a href="#"><img src="https://img.shields.io/badge/vite-2-ffc018"> </a><a href="#"><img src="https://img.shields.io/badge/Element Plus-2-409eff"> </a><a target="_blank" href="https://www.docker.com/"><img src="https://img.shields.io/badge/Docker--139cff"></a>
+<div align="center">
+  <img  width="80%"  src="https://www.hualigs.cn/image/641fdd4dac243.jpg" /><br>
+</div>
+ <br>
 
-又一个小商场系统。
 
-litemall = Spring Boot后端 + Vue管理员前端 + 微信小程序用户前端 + Vue用户移动端
 
-* [文档](https://linlinjava.gitbook.io/litemall)
-* [贡献](https://linlinjava.gitbook.io/litemall/contribute)
+将军小栈小商场系统。
 
-## 项目代码
+Spring Boot Spring Cloud后端 + Vue管理员前端 + 微信小程序用户前端 + Vue用户移动端
 
-* [码云](https://gitee.com/linlinjava/litemall)
-* [GitHub](https://github.com/linlinjava/litemall)
+* [文档](https://github.com/liy159872/GeneralInnPro/blob/master/CHANGELOG.md)
+* [贡献](https://github.com/liy159872/GeneralInnPro/blob/master/SECURITY.md)
 
-## 项目架构
+## 👀项目代码
+
+* [GitHub]( https://github.com/liy159872/GeneralInnPro)
+
+## 🧐项目架构
 ![](./doc/pics/readme/project-structure.png)
 
-## 技术栈
+## 🐙技术栈
 
-> 1. Spring Boot
+> 1. Spring Boot Spring Cloud
 > 2. Vue
 > 3. 微信小程序
 
 ![](doc/pics/readme/technology-stack.png)
 
-## 功能
+## 🐹 功能
 
 ### 小商城功能
 
@@ -70,17 +78,17 @@ litemall = Spring Boot后端 + Vue管理员前端 + 微信小程序用户前端 
 
     打开命令行，输入以下命令
     ```bash
-    cd litemall
-    mvn install
+    cd GeneralInnPro
+    mvn GeneralInnPro
     mvn clean package
-    java -Dfile.encoding=UTF-8 -jar litemall-all/target/litemall-all-0.1.0-exec.jar
+    java -Dfile.encoding=UTF-8 -jar GeneralInnPro-all/target/GeneralInnPro-all-0.1.0-exec.jar
     ```
     
 4. 启动管理后台前端
 
     打开命令行，输入以下命令
     ```bash
-    cd litemall/litemall-admin
+    cd GeneralInnPro/litemall-admin
     npm install --registry=https://registry.npm.taobao.org
     npm run dev
     ```
@@ -95,15 +103,16 @@ litemall = Spring Boot后端 + Vue管理员前端 + 微信小程序用户前端 
    3. 点击“编译”，即可在微信开发工具预览效果；
    4. 也可以点击“预览”，然后手机扫描登录（但是手机需开启调试功能）。
       
+   
    注意：
    > 这里只是最简启动方式，而小商场的微信登录、微信支付等功能需开发者设置才能运行，
-   > 更详细方案请参考[文档](https://linlinjava.gitbook.io/litemall/project)。
-
+> 更详细方案请参考[文档](https://linlinjava.gitbook.io/litemall/project)。
+   
 6. 启动轻商城前端
 
     打开命令行，输入以下命令
     ```bash
-    cd litemall/litemall-vue
+    cd GeneralInnPro/litemall-vue
     npm install --registry=https://registry.npm.taobao.org
     npm run dev
     ```
@@ -111,7 +120,7 @@ litemall = Spring Boot后端 + Vue管理员前端 + 微信小程序用户前端 
 
     注意：
     > 现在功能很不稳定，处在开发阶段。
-        
+    
 ## 开发计划
 
 当前版本[v1.8.0](https://linlinjava.gitbook.io/litemall/changelog)
@@ -193,18 +202,12 @@ V 3.0.0 完成以下目标：
 
 ## 问题
 
-![](doc/pics/readme/qq4.png)
+负责人：李一
 
- * 开发者有问题或者好的建议可以用Issues反馈交流，请给出详细信息
- * 在开发交流群中应讨论开发、业务和合作问题
- * 如果真的需要QQ群里提问，请在提问前先完成以下过程：
-    * 请仔细阅读本项目文档，特别是是[**FAQ**](https://linlinjava.gitbook.io/litemall/faq)，查看能否解决；
-    * 请阅读[提问的智慧](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/master/README-zh_CN.md)；
-    * 请百度或谷歌相关技术；
-    * 请查看相关技术的官方文档，例如微信小程序的官方文档；
-    * 请提问前尽可能做一些DEBUG或者思考分析，然后提问时给出详细的错误相关信息以及个人对问题的理解。
+博客：https://blog.csdn.net/LetterLJHX
 
-## License
+邮箱：2080863176@qq.com
 
-[MIT](https://github.com/linlinjava/litemall/blob/master/LICENSE)
-Copyright (c) 2018-present linlinjava
+对这个工程不明白的地方可以通过该联系方式与负责人联系
+
+
